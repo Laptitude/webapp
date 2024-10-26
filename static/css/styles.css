@@ -105,9 +105,9 @@ li:hover {
 
 /* Boutons stylisés */
 button, .btn-primary {
-    display: block;
-    width: 100%;
-    padding: 12px;
+    display: inline-block;
+    width: auto;
+    padding: 12px 24px;
     background-color: #007bff;
     color: #fff;
     border: none;
