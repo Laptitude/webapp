@@ -5,6 +5,30 @@ body {
     padding: 0;
     color: #333;
     background-color: #f8f9fa;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Thème sombre */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme nav {
+    background-color: #222;
+}
+
+.dark-theme a {
+    color: #ffdd57;
+}
+
+.dark-theme .btn-primary,
+.dark-theme .btn-danger {
+    background-color: #555;
+}
+
+.dark-theme .btn-primary:hover {
+    background-color: #777;
 }
 
 /* Navbar */
@@ -13,6 +37,7 @@ nav {
     color: #fff;
     padding: 10px;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 nav a {
@@ -46,6 +71,10 @@ h1, h2 {
     text-align: center;
 }
 
+.dark-theme h1, .dark-theme h2 {
+    color: #ffdd57;
+}
+
 /* Liste des éléments */
 ul {
     list-style-type: none;
@@ -59,11 +88,16 @@ li {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s;
 }
 
 li:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dark-theme li {
+    background-color: #444;
+    border-color: #555;
 }
 
 /* Boutons stylisés */
@@ -86,11 +120,27 @@ button:hover, .btn-primary:hover {
     background-color: #0056b3;
 }
 
+.dark-theme .btn-primary {
+    background-color: #555;
+}
+
+.dark-theme .btn-primary:hover {
+    background-color: #777;
+}
+
 .btn-danger {
     transition: background-color 0.3s;
 }
 
 .btn-danger:hover {
+    background-color: #c82333;
+}
+
+.dark-theme .btn-danger {
+    background-color: #555;
+}
+
+.dark-theme .btn-danger:hover {
     background-color: #c82333;
 }
 
@@ -106,10 +156,19 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.dark-theme form {
+    background-color: #444;
+    color: #fff;
+}
+
 form label {
     margin-top: 10px;
     font-weight: bold;
     color: #333;
+}
+
+.dark-theme form label {
+    color: #fff;
 }
 
 form input[type="text"],
@@ -121,12 +180,19 @@ form input[type="password"],
     margin-top: 5px;
     border: 1px solid #ced4da;
     border-radius: 5px;
+    transition: border-color 0.3s;
 }
 
 .form-control:focus, form input[type="text"]:focus,
 form input[type="email"]:focus, form input[type="password"]:focus {
     border-color: #80bdff;
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.dark-theme .form-control {
+    background-color: #333;
+    border-color: #666;
+    color: #fff;
 }
 
 /* Messages d'alerte */
