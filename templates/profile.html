@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Profil{% endblock %}
+
+{% block content %}
+<h2>Profil de {{ user['username'] }}</h2>
+<p>Email : {{ user['email'] }}</p>
+<p>Niveau : {{ user['level'] }}</p>
+<p>Expérience : {{ user['experience'] }}</p>
+{% endblock %}

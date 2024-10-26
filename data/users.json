@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "username": "testuser",
+            "email": "test@example.com",
+            "password": "$2b$10$examplesaltedhash...",
+            "experience": 0,
+            "level": 1
+        },
+        {
+            "username": "Laptitude",
+            "email": "alex.finlande@gmail.com",
+            "password": "pbkdf2:sha256:600000$zit4v8E9kSztHmm9$2c55fc10b06e0a9b67c647f2d3d53b0b2e0bdeef0861341abf3bb52e481c4667",
+            "experience": 0,
+            "level": 1
+        }
+    ]
+}

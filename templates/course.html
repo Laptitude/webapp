@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>{{ course.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Accueil</a>
+        <a href="{{ url_for('profile') }}">Profil</a>
+        <span class="username">{{ current_user.name }}</span>
+        <a href="{{ url_for('logout') }}">Déconnexion</a>
+    </div>
+    <h2>{{ course.title }}</h2>
+    <p>{{ course.content }}</p>
+</body>
+</html>

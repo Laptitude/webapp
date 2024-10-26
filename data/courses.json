@@ -1,0 +1,15 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "Introduction à la Programmation",
+        "description": "Les bases de la programmation pour débutants."
+      },
+      {
+        "id": 2,
+        "title": "Python Avancé",
+        "description": "Cours avancé pour approfondir vos connaissances en Python."
+      }
+    ]
+  }
+  

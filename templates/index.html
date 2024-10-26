@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<h1>Bienvenue sur notre application d'apprentissage !</h1>
+<ul>
+    {% for course in courses %}
+        <li>{{ course.title }} - {{ course.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
